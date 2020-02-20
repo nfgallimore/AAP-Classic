@@ -1,7 +1,6 @@
 AAPSettings = {};
 
 function AAP_OnEvent(self, event)
-    DEFAULT_CHAT_FRAME:AddMessage(print(AAPSettings.QuestAutoAccept));
     _G["QuestAutoAcceptCheckbox"]:SetChecked(AAPSettings.QuestAutoAccept);
 end
 
