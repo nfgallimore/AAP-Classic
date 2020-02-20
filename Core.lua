@@ -1,4 +1,5 @@
 AAPClassic = {}
+
 AAPClassic.Explored = {}
 AAPClassic.Build = GetBuildInfo()
 if (tonumber(string.sub(AAPClassic.Build, 1,1)) > 2) then
@@ -46,6 +47,7 @@ AAPClassic.QStarterList = {
 	16304,
 	16303,
 }
+
 function AAPClassic.getContinent()
     local mapID = C_Map.GetBestMapForUnit("player")
     if(mapID) then
@@ -222,9 +224,9 @@ local function AAP_SlashCmd(AAP_index)
 
                 
 	elseif (AAP_index == "auto") then
-            AAPC1[AAPClassic.Realm][AAPClassic.Name]["noauto"]=false
+            AAPSettings.QuestAutoAccept=true
 	elseif (AAP_index == "noauto") then
-            AAPC1[AAPClassic.Realm][AAPClassic.Name]["noauto"]=true
+            AAPSettings.QuestAutoAccept=false
 	elseif (AAP_index == "status") then
                 local CurStep = AAPC1[AAPClassic.Realm][AAPClassic.Name]["Zones"][AAPClassic.QH.ZoneNr]
 		local Step = AAPClassic.Path[AAPClassic.QH.ZoneNr][CurStep]
