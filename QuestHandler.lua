@@ -1100,7 +1100,6 @@ end
 
 local function IsAutocompleteOn() 
 	if ( AAPSettings.QuestAutoAccept and not IsControlKeyDown() ) then
-		DEFAULT_CHAT_FRAME:AddMessage("ype");
 		return true
 	else 
 		return false
