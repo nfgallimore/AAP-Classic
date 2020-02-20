@@ -1099,12 +1099,11 @@ function AAPClassic.CheckNamePlate()
 end
 
 local function IsAutocompleteOn() 
-    local noauto = AAPC1[AAPClassic.Realm][AAPClassic.Name]["noauto"]
-    if ( not noauto and not IsControlKeyDown() ) then
-        return true
-    else 
-        return false
-    end
+	if ( AAPSettings.QuestAutoAccept and not IsControlKeyDown() ) then
+		return true
+	else 
+		return false
+	end
 end
 
 AAPClassic.QH.LoopBooking = CreateFrame("frame")
