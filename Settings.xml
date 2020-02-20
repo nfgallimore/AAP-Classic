@@ -1,0 +1,12 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+
+  <Script file="AAP_Settings.lua" />
+
+  <Frame name="AzerothAutoPilotPanel" parent="UIParent" hidden="false">
+    <Scripts>
+      <OnLoad function="AAP_OnLoad" />
+      <OnEvent function="AAP_OnEvent" />
+    </Scripts>
+  </Frame>
+
+</Ui>

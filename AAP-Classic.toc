@@ -5,6 +5,8 @@
 ## Author: Zyrrael
 ## Version: 0.14
 ## SavedVariables: AAPC1, AAPC2, AAPC3, AAPCQuestNames, AAPC_HoldZoneVar
+## SavedVariablesPerCharacter: AAPSettings
+Settings.xml
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.xml
 lib\HereBeDragons\HereBeDragons-2.0.lua
